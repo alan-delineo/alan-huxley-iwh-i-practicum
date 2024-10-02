@@ -12,8 +12,8 @@ body, * {
     margin: 0 auto;
 }
 
-h1 {
-    margin: 1rem;
+h1, p, a {
+    margin-bottom: 1rem;
 }
 
 .cards {
