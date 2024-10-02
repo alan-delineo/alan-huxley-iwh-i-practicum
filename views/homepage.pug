@@ -1,0 +1,20 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Albums
+        table.table
+            tr
+                th Album name 
+                th Artist
+                th Label
+                th Description
+            each album in data
+                tr 
+                    td #{album.properties.name}  
+                    td #{album.properties.artist}
+                    td #{album.properties.label}
+                    td #{album.properties.description}
