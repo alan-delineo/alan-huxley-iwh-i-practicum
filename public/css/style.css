@@ -46,14 +46,15 @@ h1, p, a {
     box-shadow: 3px 2px 6px lightgrey;
 }
 
-label, input {
+label, input, textarea {
     margin-top: 5px;
     display: block;
     font-size: inherit;
 }
 
-input[type="text"] {
-    padding: .25rem;
+input[type="text"],
+textarea {
+    padding: .5rem;
 }
 
 input[type="submit"] {
