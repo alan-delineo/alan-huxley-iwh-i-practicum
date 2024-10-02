@@ -18,4 +18,4 @@ html
                         td #{album.properties.name}  
                         td #{album.properties.artist}
                         td #{album.properties.label}
-                        td #{album.properties.description}
+                        td #{album.properties.description.substring(0, 100) + "..."}
