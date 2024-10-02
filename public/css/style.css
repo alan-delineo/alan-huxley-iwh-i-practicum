@@ -3,7 +3,13 @@
 body, * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0rem;
+}
+
+.container {
+    padding: 1rem;
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
 h1 {
@@ -55,4 +61,26 @@ input[type="submit"] {
     border: none;
     padding: .375rem 1rem;
     margin-top: 10px;
+}
+
+table, .table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid lightgrey;
+}
+
+th {
+    text-align: left;
+    background-color: rgb(222, 222, 222);
+}
+th,
+td {
+    padding: 1rem;
+    vertical-align: top;
+    border: 1px solid lightgrey;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(244, 243, 243);
 }
