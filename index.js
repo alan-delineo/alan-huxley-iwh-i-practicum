@@ -15,15 +15,15 @@ const PRIVATE_APP_ACCESS = process.env.PRIVATE_APP_ACCESS;
 // * Code for Route 1 goes here
 
 app.get('/', async (req, res) => {
-    const contacts = 'https://api.hubspot.com/crm/v3/objects/contacts';
+    const albums = 'https://api.hubspot.com/crm/v3/objects/albums?limit=10&properties=name,artist,label,description';
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
     }
     try {
-        const resp = await axios.get(contacts, { headers });
+        const resp = await axios.get(albums, { headers });
         const data = resp.data.results;
-        res.render('contacts', { title: 'Contacts | HubSpot APIs', data });      
+        res.render('homepage', { title: 'Albums | HubSpot APIs | Alan Huxley I Practicum', data });      
     } catch (error) {
         console.error(error);
     }
